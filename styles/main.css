@@ -19,16 +19,16 @@
 }
 body {
   font-family: "Kumbh Sans", sans-serif;
-  height: 200vh;
+  /* height: 200vh; */
 }
 a {
   text-decoration: none;
   cursor: pointer;
 }
-.fixContainer {
+/* .fixContainer {
   position: sticky;
   top: 0;
-}
+} */
 .container {
   display: flex;
   justify-content: flex-start;
