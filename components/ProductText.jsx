@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 
 function ProductText() {
-    const [productQuantity, setProductQuantity] = useState(0);
+    const [productQuantity, setProductQuantity] = useState(1);
     const [productPrice, setProductPrice] = useState(125);
     const handleDecrement = () => {
-        if (productQuantity > 0) {
+        if (productQuantity > 1) {
           setProductQuantity(productQuantity - 1);
+          setProductPrice((productQuantity - 1) * 125);
         }
       };
-    
       const handleIncrement = () => {
         setProductQuantity(productQuantity + 1);
+        setProductPrice((productQuantity + 1) * 125);
       };
 
   return (
