@@ -84,6 +84,11 @@ a {
   height: auto;
   border-radius: 12px;
 }
+.imageCar1 img {
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+}
 .imageThumb {
   display: flex;
   padding-top: 1rem;
@@ -283,7 +288,7 @@ a {
   .product {
     grid-template-columns: 1fr;
     justify-content: center;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
   }
   .productImage {
     justify-content: center;
@@ -301,6 +306,9 @@ a {
     height: 550px;
     border-radius: 0px;
   }
+  .imageCar1 {
+    display: none;
+  }
   .description {
     font-size: 1rem;
   }
@@ -310,6 +318,23 @@ a {
   }
   .btnS {
     grid-column: span 2;
+  }
+  .previousIcon {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    background-color: #ffffff;
+    padding: 0.8rem 1rem;
+    border-radius: 100%;
+  }
+
+  .nextIcon {
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    background-color: #ffffff;
+    padding: 0.8rem 1rem;
+    border-radius: 100%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -332,7 +357,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 476px) {
   .btn {
     grid-template-columns: 1fr;
   }
@@ -348,6 +373,13 @@ a {
   .count {
     grid-column: span 2;
   }
+  .previousIcon{
+    left: 5%;
+    top: 40%;
+  }
+  .nextIcon{
+    top: 40%;
+  }
 }
 @media screen and (max-width: 376px) {
   .container {
@@ -362,5 +394,12 @@ a {
   }
   .description {
     font-size: 0.95rem;
+  }
+  .nextIcon{
+    top: 36%;
+    left: 83%;
+  }
+  .previousIcon{
+    top: 36%;
   }
 }
